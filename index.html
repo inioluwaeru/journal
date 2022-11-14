@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="./style/style.css">
+</head>
+<body id="body">
+  <header>
+    <div class="container">
+        <h1 id="header">My Diary</h1>
+        <form action="">
+            <input type="date" class="note-title" id="date" >
+            <input type="text" id="note-title" placeholder="Head line">
+            <textarea id="note-text" placeholder="Details"></textarea>
+            <button id="add-btn">Add Document</button>
+        </form>
+    </div>
+</header>
+
+
+  <button class="dayBtn" id="dayBtn" onclick="day()">day</button>
+  <button class="nightBtn" onclick="night()">night</button>
+
+
+<section>
+    <div class="container">
+        <h2 id="headere">Documentations</h2>
+        <hr>
+        <div id="notes">
+    
+                <div class="note">
+                    <p class="note-counter">Note ${index + 1}</p>
+                    <h3 class="note-title"> $element.title </h3>
+                    <p class="note-text"> $element.text</p>
+                    <button class="note-btn">Delete Note</button>
+                    <button class="notr-btn edit-btn">Delete Note</button>
+                </div>
+            
+        </div>
+    </div>
+</section>
+
+
+      <script src="./java/java.js"></script>
+</body>
+</html>
